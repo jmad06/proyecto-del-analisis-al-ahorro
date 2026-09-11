@@ -5,7 +5,7 @@
 **Autor**: Jose Maderas
 **Stack:** Excel · Power BI · DAX
 
-(insertar gif del dashboard)
+![Demo del dashboard](docs/img/dashboard.gif)
 
 ---
 
@@ -41,9 +41,9 @@ Peaje 2.0TD en modalidad de precio único (24 h) con 10 kW contratados. El cambi
 
 ## Documentación ampliada
 
-- **[Análisis completo](https://claude.ai/chat/docs/analisis-completo.md)** — el caso de Antonio, la estructura del dashboard pestaña a pestaña y la decisión final con su desglose de impacto.
-- **[Arquitectura técnica](https://claude.ai/chat/docs/arquitectura-tecnica.md)** — modelo de datos, columnas calculadas, medidas DAX, origen de los datos y limitaciones.
-- **[Informe ejecutivo](https://claude.ai/chat/docs/informe-ejecutivo.md)** — el mismo análisis en formato de informe interno de empresa (planteamiento, hallazgos, recomendaciones, próximos pasos, fuentes de datos).
+- **[Análisis completo](docs/analisis-completo.md)** — el caso de Antonio, la estructura del dashboard pestaña a pestaña y la decisión final con su desglose de impacto.
+- **[Arquitectura técnica](docs/arquitectura-tecnica.md)** — modelo de datos, columnas calculadas, medidas DAX, origen de los datos y limitaciones.
+- **[Informe ejecutivo](docs/informe-ejecutivo.md)** — el mismo análisis en formato de informe interno de empresa (planteamiento, hallazgos, recomendaciones, próximos pasos, fuentes de datos).
 
 ---
 
@@ -80,13 +80,15 @@ Peaje 2.0TD en modalidad de precio único (24 h) con 10 kW contratados. El cambi
 ├── docs/
 │   ├── analisis-completo.md
 │   ├── arquitectura-tecnica.md
-│   └── informe-ejecutivo.md
+│   ├── informe-ejecutivo.md
 │   └── img/
-│	    └── dashboard-pagina1-consumo.png
-│	    └── dashboard-pagina2-potencia.png
-│	    └── dashboard-pagina3-comparativa.png
-│	    └── dashboard-pagina4-ahorro.png
+│	    ├── dashboard-pagina1-consumo.png
+│	    ├── dashboard-pagina2-potencia.png
+│	    ├── dashboard-pagina3-comparativa.png
+│	    ├── dashboard-pagina4-ahorro.png
 │	    └── dashboard.gif
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 

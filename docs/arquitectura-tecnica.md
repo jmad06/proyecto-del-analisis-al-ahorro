@@ -5,20 +5,20 @@
 ---
 ## Índice de contenidos
 
-- [[#Parte 2: Cómo se ha construido el proyecto|Parte 2: Cómo se ha construido el proyecto]]
-  - [[#2.1. Arquitectura|2.1. Arquitectura]]
-    - [[#2.1.1. Columnas calculadas|2.1.1. Columnas calculadas]]
-  - [[#2.2. Origen de los datos|2.2. Origen de los datos]]
-  - [[#2.3. Conceptos excluidos del análisis|2.3. Conceptos excluidos del análisis]]
-  - [[#2.4. Por qué mediana y no promedio|2.4. Por qué mediana y no promedio]]
-  - [[#2.5. Medidas DAX|2.5. Medidas DAX]]
-    - [[#2.5.1. Medidas de consumo|2.5.1. Medidas de consumo]]
-    - [[#2.5.2. Medidas de potencia|2.5.2. Medidas de potencia]]
-    - [[#2.5.3. Medidas de comparativa|2.5.3. Medidas de comparativa]]
-    - [[#2.5.4. Medidas de ahorro|2.5.4. Medidas de ahorro]]
-  - [[#2.6. Limitaciones y líneas futuras|2.6. Limitaciones y líneas futuras]]
-    - [[#2.6.1. Limitaciones|2.6.1. Limitaciones]]
-    - [[#2.6.2. Líneas futuras|2.6.2. Líneas futuras]]
+- [Parte 2: Cómo se ha construido el proyecto](#parte-2-cómo-se-ha-construido-el-proyecto)
+  - [2.1. Arquitectura](#21-arquitectura)
+    - [2.1.1. Columnas calculadas](#211-columnas-calculadas)
+  - [2.2. Origen de los datos](#22-origen-de-los-datos)
+  - [2.3. Conceptos excluidos del análisis](#23-conceptos-excluidos-del-análisis)
+  - [2.4. Por qué mediana y no promedio](#24-por-qué-mediana-y-no-promedio)
+  - [2.5. Medidas DAX](#25-medidas-dax)
+    - [2.5.1. Medidas de consumo](#251-medidas-de-consumo)
+    - [2.5.2. Medidas de potencia](#252-medidas-de-potencia)
+    - [2.5.3. Medidas de comparativa](#253-medidas-de-comparativa)
+    - [2.5.4. Medidas de ahorro](#254-medidas-de-ahorro)
+  - [2.6. Limitaciones y líneas futuras](#26-limitaciones-y-líneas-futuras)
+    - [2.6.1. Limitaciones](#261-limitaciones)
+    - [2.6.2. Líneas futuras](#262-líneas-futuras)
 ---
 ## Parte 2: Cómo se ha construido el proyecto
 
@@ -38,7 +38,6 @@ El dashboard de Power BI usa **modo de importación (Import)** sobre un archivo 
 
 Las medidas DAX calculan de forma dinámica los costes, márgenes y comparativas según la tarifa seleccionada en el propio dashboard.
 
-_(Insertar aquí captura de la vista de modelo de datos de Power BI)_
 #### 2.1.1. Columnas calculadas
 
 El modelo incluye cinco columnas calculadas, repartidas en tres tablas, que preparan el terreno para los desgloses y comparativas de los visuales sin necesidad de duplicar medidas por segmento.

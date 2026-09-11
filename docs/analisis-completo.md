@@ -4,21 +4,21 @@
 ---
 ## Índice de contenidos
 
-- [[#Parte 1: El caso de Antonio|Parte 1: El caso de Antonio]]
-  - [[#1.1. Contexto|1.1. Contexto]]
-  - [[#1.2. Pregunta de análisis|1.2. Pregunta de análisis]]
-  - [[#1.3. Estructura del dashboard|1.3. Estructura del dashboard]]
-    - [[#1.3.1. Consumo|1.3.1. Consumo]]
-    - [[#1.3.2. Potencia|1.3.2. Potencia]]
-    - [[#1.3.3. Comparativa|1.3.3. Comparativa]]
-    - [[#1.3.4. Ahorro|1.3.4. Ahorro]]
-  - [[#1.4. Decisión final e impacto|1.4. Decisión final e impacto]]
-    - [[#1.4.1. De dónde sale cada euro del ahorro|1.4.1. De dónde sale cada euro del ahorro]]
-    - [[#1.4.2. Impacto|1.4.2. Impacto]]
+- [Parte 1: El caso de Antonio](#parte-1-el-caso-de-antonio)
+  - [1.1. Contexto](#11-contexto)
+  - [1.2. Pregunta de análisis](#12-pregunta-de-análisis)
+  - [1.3. Estructura del dashboard](#13-estructura-del-dashboard)
+    - [1.3.1. Consumo](#131-consumo)
+    - [1.3.2. Potencia](#132-potencia)
+    - [1.3.3. Comparativa](#133-comparativa)
+    - [1.3.4. Ahorro](#134-ahorro)
+  - [1.4. Decisión final e impacto](#14-decisión-final-e-impacto)
+    - [1.4.1. De dónde sale cada euro del ahorro](#141-de-dónde-sale-cada-euro-del-ahorro)
+    - [1.4.2. Impacto](#142-impacto)
 
 ---
 ## Parte 1: El caso de Antonio
-### 1.1.  Contexto
+### 1.1. Contexto
 
 Antonio tiene 66 años y está jubilado. Durante muchos años desarrolló una actividad profesional que requería el uso continuado de maquinaria en una instalación que compartía suministro eléctrico con su vivienda, lo que justificaba un elevado consumo energético y una potencia contratada de **16,44 kW**.
 
@@ -62,7 +62,7 @@ Analiza la evolución del consumo eléctrico entre 2024 y 2025, tanto a nivel me
 - **La energía reactiva confirma físicamente el cese de actividad, de forma independiente al testimonio de Antonio.** La reactiva inductiva es la que generan los motores eléctricos: si la maquinaria dejó de funcionar, debe desplomarse. Y lo hace una caída del **-56,29 %**. El gráfico "Reactiva consumida por hora" muestra que este descenso no es uniforme: en las cuatro horas que el resto del análisis ya identifica como horario de trabajo de la maquinaria (7:00, 8:00, 19:00 y 20:00), la reactiva cae entre un 84,6 % y un 90,6 % (de 1.098,5 a 138,5,3 kVARh sumando las cuatro horas), frente a una caída media del 22,6 % en el resto del día. La magnitud física de la reactiva confirma, con una variable que no depende de hábitos domésticos ni de estacionalidad, la misma conclusión a la que apunta la energía activa: la actividad cesó y lo hizo en el horario exacto que Antonio describió.
 
 
-_(Insertar aquí captura de la pestaña Consumo)_
+![Pestaña Consumo](img/dashboard-pagina1-consumo.png)
 
 #### 1.3.2. Potencia
 
@@ -78,7 +78,7 @@ Estos datos evidencian un sobredimensionamiento claro del contrato respecto a la
 
 **La reducción de potencia y el cambio de tarifa no son dos decisiones independientes: la normativa las acopla.** La CNMC (Circular 3/2020) reserva la tarifa de acceso 3.0TD a los suministros de baja tensión con potencia contratada superior a 15 kW en algún periodo, y la 2.0TD a los de 15 kW o menos. Como la propuesta reduce la potencia de Antonio de 16,44 kW a 10 kW, el cambio de peaje de 3.0TD a 2.0TD **no es una opción**, es una consecuencia obligatoria de bajar de 15 kW. Por eso la comparativa de este proyecto combina ambas variables en un único escenario en lugar de tratarlas por separado.
 
-_(Insertar aquí captura de la pestaña Potencia)_
+![Pestaña Potencia](img/dashboard-pagina2-potencia.png)
 
 #### 1.3.3. Comparativa
 
@@ -92,9 +92,9 @@ Compara tres escenarios de tarifa y potencia usando el mismo consumo real de 202
 
 Los precios son fijos durante los 12 meses simulados: la comparativa responde a "qué habría pagado con esta oferta", no a una proyección con precios variables.
 
-Estas cifras cubren únicamente los conceptos de **potencia y energía consumida**, que son los únicos sobre los que Antonio tiene capacidad real de decisión. Quedan excluidos impuestos, peajes regulados y otros cargos ajenos a la tarifa contratada; el detalle y el motivo de cada exclusión se explica en la sección [[#Conceptos excluidos del análisis]]
+Estas cifras cubren únicamente los conceptos de **potencia y energía consumida**, que son los únicos sobre los que Antonio tiene capacidad real de decisión. Quedan excluidos impuestos, peajes regulados y otros cargos ajenos a la tarifa contratada; el detalle y el motivo de cada exclusión se explica en la sección [Conceptos excluidos del análisis](arquitectura-tecnica.md#23-conceptos-excluidos-del-análisis) de la arquitectura técnica.
 
-_(Insertar aquí captura de la pestaña Comparativa)_
+![Pestaña Comparativa](img/dashboard-pagina3-comparativa.png)
 
 #### 1.3.4. Ahorro
 
@@ -118,7 +118,7 @@ Desglose de ahorro por potencia contratada y energía consumida (visible en grá
 Dentro del ahorro de potencia (419,52 €), **298,26 €** provienen de reducir la potencia contratada de 16,44 a 10 kW manteniendo la estructura de precios de la 3.0TD, y **121,26 €** de cambiar a la estructura de precio de la 2.0TD. El 71,6 % del ahorro total viene de la potencia, no de la tarifa de energía: el cambio de contrato es, sobre todo, una corrección de sobredimensionamiento, no una mejora de tarifa.
 
 
-_(Insertar aquí captura de la pestaña Ahorro)_
+![Pestaña Ahorro](img/dashboard-pagina4-ahorro.png)
 
 ---
 
