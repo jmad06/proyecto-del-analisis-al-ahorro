@@ -115,6 +115,7 @@ Desglose de ahorro por potencia contratada y energía consumida (visible en grá
 | Potencia contratada   | 761,40 €       | 341,88 €         | 419,52 €     | 71,6 %             |
 | **Total**             | **1.549,64 €** | **963,57 €**     | **586,07 €** | **100 %**          |
 
+
 Dentro del ahorro de potencia (419,52 €), **298,26 €** provienen de reducir la potencia contratada de 16,44 a 10 kW manteniendo la estructura de precios de la 3.0TD, y **121,26 €** de cambiar a la estructura de precio de la 2.0TD. El 71,6 % del ahorro total viene de la potencia, no de la tarifa de energía: el cambio de contrato es, sobre todo, una corrección de sobredimensionamiento, no una mejora de tarifa.
 
 
